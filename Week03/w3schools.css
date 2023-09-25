@@ -1,0 +1,70 @@
+/* 2. Introduction
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+External stylesheets are stored in CSS files */
+
+/* 3. Syntax
+The selector points to the HTML element you want to style
+The declaration block contains one or more declarations seperated by semicolons
+Each declaration includes a CSS property name and a value, seperated by a colon
+Multiple CSS declarations are seperated with semicolons, and declaration blocks are surrounded by curly braces */
+
+/* 4. Selectors
+CSS selectors are used to "find" (or select) the HTML elements you want to style
+The element selector selects HTML elements based on the element name
+The id selector uses the id attribute of and HTML element to select a specific element
+The id of an element is unique within a page, so the id selector is used to select one unique element
+To select an element with a specific id, write a hash (#) character, followed by the id of the element
+The class selector selects HTML elements with a specific class attribute
+To select elements with a specific class, write a period (.) character, followed by the class name
+The universal selector (*) selects all HTML elements on the page
+To group selectors, seperate each selector with a comma */
+
+/* 6. Comments
+This is comments */
+
+/* 9. Borders */
+
+/* 10. Margins */
+
+/* 11. Padding */
+
+/* 12. Height/Width */
+
+/* 13. Box Model */
+
+/* 14. Outline */
+
+/* 15. Text */
+
+/* 16. Fonts */
+
+/* 17. Icons */
+
+/* 18. Links */
+
+/* 19. Lists */
+
+/* 23. Position */
+
+/* 24. Z-index */
+
+/* 26. Float
+The float property is used for positioning and formatting content
+The float property can have left, right, none, or inherit
+The clear property specifies what should happen with the element that is next to a floating element
+The clear property can have none, left, right, both, or inherit
+If a floated element is taller than the containing element, it will "overflow" outside of its container
+We can then add a clearfix hack to solve this problem */
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 27. Inline-block */
+
+/* 28. Align */
