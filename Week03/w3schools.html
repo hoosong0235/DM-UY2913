@@ -1,0 +1,385 @@
+<!-- 2. Introduction
+HTML stands for Hyper Text Markup language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc -->
+
+<!-- 4. Basic
+All HTML documents must start wit a document type declaration
+The HTML document itself begins with <html> and ends with </html>
+The visible part of the HTML document is between <body> and </body> -->
+<!DOCTYPE html>
+
+<!-- 6. Attributes
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page
+This is meant to assist search engines and browsers
+Country codes can also be added to the language code in the lang attribute
+So, the first two characters define the language of the HTLM page, and the last two characters define the country -->
+<html lang="en-US">
+
+    <!-- 27. Head
+    The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag
+    The <title> element defines the title of the document
+    The title must be text-only, and it is shown in the browser's title bar or in the page's tab
+    The <style> element is used to define style information for a single HTML page
+    The <link> element defines the relationship between the current document and an external resource
+    The <link> tag is most often used to link to external style sheets
+    The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings
+    The <script> element is used to define client-side JavaScripts
+    The <base> element specifies the base URL and/or target for all relative URLs in a page
+    The <base> tag must have either an href or a target attribute present, or both -->
+    <head>
+        <style></style>
+        <link rel="stylesheet" href="w3schools.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="this is description">
+        <meta name="author" content="Seungho Jang">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <meta http-equiv="refresh" content="60">
+
+        <!-- 18. Page Title
+        The <title> element adds a title to your page -->
+        <title>w3schools</title>
+
+        <!-- 17. Favicon
+        A favicon image is displayed to the left of the page title in the browser tab
+        To add a favicon to your website, save your favicon image
+        Next, add a <link> element to your "index.html" file, after the <title> element -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        
+    </head>
+
+    <body>
+
+        <!-- 5. Elements
+        The HTML element is everything from the start tag to the end tag
+        HTML elements with no content are called empty elements
+        The <br> tag defines a line break, and is an empty element without a closing tag -->
+        <br>
+
+        <!-- 6. Attributes
+        All HTML elements can have attributes
+        Attributes provide additional information about elements
+        Attributes are always specified in the start tag
+        Attributes usually come in name/value pairs like: name="value"
+        The style attributes is used to add styles to an element, such as color, font, size, and more
+        The title attribute defines some extra information about an element
+        The value of the attribute will be displayed as a tooltip when you mouse over the element           -->
+        <p style="color: red;">
+            this is p
+        </p>
+        <p title="this is title">
+            this is p
+        </p>
+            
+        <!-- 7. Headings
+        HTML Headings are defined with the <h1> to <h6> tags
+        <h1> defines the most important heading, <h6> defines the least important heading -->
+        <h1>this is h1</h1>
+        <h2>this is h2</h2>
+        <h3>this is h3</h3>
+        <h4>this is h4</h4>
+        <h5>this is h5</h5>
+        <h6>this is h6</h6>
+
+        <!-- 8. Paragraphs
+        HTML paragraphs are defined with the <p> tag
+        A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph
+        With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code
+        The browser will automatically remove any extra spaces and lines when the page is displayed
+        The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule
+        The HTML <pre> element defines preformatted text
+        The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both space and line breaks -->
+        <p>this is p</p>
+        <hr>
+        <pre>
+            this is pre
+
+            this is pre
+
+            this is pre
+        </pre>
+
+        <!-- 9. Styles
+        The style attribute is used to add styles to an element, such as color, font, size and more
+        The HTML style attribute has the following syntax <tagname style="property: value;">
+        The property is a CSS property, The value is a CSS value
+        The CSS background-color property defines the background color for an HTML element
+        The CSS color property defines the text color for an HTML element
+        The CSS font-family property defines the font to be used for an HTML element
+        The CSS font-size property defines the text size for an HTML element
+        The CSS text-align property defines the horizontal text alignment for an HTML element -->
+        <p style="
+            background-color: powderblue;
+            color: blue;
+            font-family: courier;
+            font-size: 160%;
+            text-align: center;
+        ">
+            this is p
+        </p>
+
+        <!-- 10. Formatting
+        Formatting elements were designed to display special types of text -->
+        <b>this is b</b>
+        <strong>this is strong</strong><br>
+        <i>this is i</i>
+        <em>this is em</em><br>
+        <mark>this is mark</mark><br>
+        <small>this is small</small><br>
+        <del>this is del</del><br>
+        <ins>this is ins</ins><br>
+        <sub>this is sub</sub><br>
+        <sup>this is sup</sup><br>
+
+        <!-- 11. Quotations
+        The HTML <blockquote> element defines a section that is quoted from another source
+        The HTML <q> tag defines a short quotation
+        The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM"
+        The HTML <address> tag defines the contact information for the author/owner of a document or an article
+        The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.)
+        The HTML <bdo> tag is used to override the current text direction -->
+        <blockquote cite="https://www.w3schools.com">
+            this is blockqoute
+        </blockquote><br>
+        <q>this is q</q><br>
+        <abbr title="this is abbr">
+            tia
+        </abbr><br>
+        <address>this is address</address><br>
+        <cite>this is cite</cite><br>
+        <bdo dir="rtl">
+            this is bdo
+        </bdo><br>
+        
+        <!-- 12. Comments
+        This is comment -->
+
+        <!-- 13. Colors
+        In HTML, a color can be specified by using a color name
+        You can set the background color for HTML elements
+        You can set the color of text
+        You can set the color of borders
+        In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values
+        In HTML, a color can be specified as an RGB value, using this formula rgb(red, green, blue)
+        RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color
+        An RGBA color value is specified with rgba(red, green, blue, alpha)
+        In HTML, a color can be specified using a hexadecimal value in the form #rrggbb
+        In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form hsl(hue, saturation, lightness)
+        Hue is a degree on the color wheel from 0 to 360, 0 is red, 120 is green, and 240 is blue
+        Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color
+        Lightness is also a percentage value, 0% is black, and 100% is white
+        HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for a color
+        An HSLA color value is specified with hsla(hue, saturation, lightness, alpha) -->
+
+        <!-- 14. CSS
+        Cascading Style Sheets (CSS) is used to format the layout of a webpage
+        The word cascading means that a style applied to a parent element will also apply to all children elements within the parent
+        An inline CSS is used to apply a unique style to a single HTML element
+        An inline CSS uses the style attribute of an HTML element
+        An internal CSS is used to define a style for a single HTML pages
+        An internal CSS is defined in the <head> section of an HTML page, within a <style> element
+        An external style sheet is used to define the style for many HTML pages
+        To use an external style sheet, add a link to it in the <head> section of each HTML page
+        External style sheets can be referenced with a full URL or with a path relative to the current web page
+        The HTML style attribute has the following syntax <tagname style="property: value;">
+        The property is a CSS property, The value is a CSS value
+        The CSS background-color property defines the background color for an HTML element
+        The CSS color property defines the text color for an HTML element
+        The CSS font-family property defines the font to be used for an HTML element
+        The CSS font-size property defines the text size for an HTML element
+        The CSS text-align property defines the horizontal text alignment for an HTML element
+        The CSS border property defines a border around an HTML element
+        The CSS padding property defines a padding (space) between the text and the border
+        The CSS margin property defines a margin (space) outside the border -->
+        <p style="
+            background-color: powderblue;
+            color: blue;
+            font-family: courier;
+            font-size: 160%;
+            text-align: center;
+            border: 2px solid blue;
+            padding: 30px;
+            margin: 50px;
+        ">
+            this is p
+        </p>
+
+        <!-- 15. Links
+        HTML links are defined with the <a> tag
+        The link's destination is specified in the href attribute
+        The target attribute specifies where to open the linked document
+        _self opens the document in the same window/tab as it was clicked
+        _blank opens the document in a new window or tab
+        _parent opens the document in the parent frame
+        _top opens the document in the full body of the window
+        Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email)
+        To use an HTML buttom as a link, you have to add some JavaScript code -->
+        <a href="https://www.w3schools.com" target="_blank">
+            this is a
+        </a><br>
+        <a href="mailto:sj4423@nyu.edu">
+            this is a
+        </a><br>
+        <button onclick="">
+            this is button
+        </button><br>
+
+        <!-- 16. Images
+        HTML images are defined with the <img> tag
+        The source file (src), alternative text (alt), width, and height are provided as attributes
+        Use the CSS float property to let the image float to the right or to the left of a text
+        To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property
+        If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element
+        To avoid the background image from repeating itself, set the background-repeat property to no-repeat
+        If you want the background image to cover the entire element, you can set the background-size property to cover
+        Also, to make sure the entire element is always covered, set the background-attachment property to fixed
+        If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100% -->
+        <p>
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3schools" style="float: right; width: 104px; height: 142px;">
+            The image will float to the right of the text
+        </p>
+        <p>
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3schools" style="float: left; width: 104px; height: 142px;">
+            The image will float to the left of the text
+        </p>
+        <p style="
+        background-image: url(https://www.w3schools.com/images/w3schools_green.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        ">
+            this is p
+        </p>
+
+        <!-- 19. Tables
+        Todo -->
+
+        <!-- 20. Lists
+        An unordered list starts with the <ul> tag
+        An ordered list starts with the <ol> tag
+        The type attribute of the <ol> tag, defines the type of the list item marker
+        Each list item starts with the <li> tag
+        The CSS list-style-type property is used to define the style of the list item marker
+        A description list is a list of terms, with a description of each term
+        The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term -->
+        <ul>
+            this is ul
+            <li>this is li</li>
+            <li>this is li</li>
+            <li>this is li</li>
+        </ul><br>
+        <ol>
+            this is ol
+            <li>this is li</li>
+            <li>this is li</li>
+            <li>this is li</li>
+        </ol><br>
+        <dl>
+            this is dl
+            <dt>this is dt</dt>
+            <dd>this is dd</dd>
+            <dt>this is dt</dt>
+            <dd>this is dd</dd>
+            <dt>this is dt</dt>
+            <dd>this is dd</dd>
+        </dl>
+
+        <!-- 21. Block & Inline
+        A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element
+        A block-level element always takes up the full width available (stretches out to the left and right as far as it can)
+        An inline element does not start on a new line
+        An inline element only takes up as much width as necessary
+        The <div> element is often used as a container for other HTML elements
+        The <span> element is an inline container used to mark up a part of a text, or a part of a document -->
+        <div style="
+            background-color: black;
+            color: white;
+            padding: 20px;
+        ">
+            this is div
+            <span style="
+                color: blue;
+                font-weight: bold;
+            ">
+                this is span
+            </span>
+            this is div
+        </div>
+
+        <!-- 22. Classes
+        The class attribute is often used to point to a class name in a style sheet
+        It can also be used by a JavaScript to access and manipulate elements with the specific class name
+        To create a class, write a period (.) character, followed by a class name
+        Then define the CSS properties within curly braces {}
+        To define multiple classes, seperate the class names with a spaces -->
+
+        <!-- 23. id
+        The id attribute specifies a unique id for an HTML element
+        The value of the id attribute must be unique within the HTML document
+        The id attribute is used to point to a specific style declaration in a style sheet
+        It is also used by JavaScript to access and manipulate the element with the specific id
+        The syntax for id is, write a hash character (#), followed by an id name
+        Then define the CSS properties within curly braces {} -->
+
+        <!-- 24. Iframes
+        Todo -->
+
+        <!-- 25. JavaScript
+        Todo -->
+
+        <!-- 26. File Paths
+        An absolute file path is the full URL to a file
+        A relative file path points to a file relative to the current page -->
+
+        <!-- 28. layout
+        HTML has several semantic elements that define the different parts of a web page
+        <header> defines a header for a document or a section
+        <nav> defines a set of navigation links
+        <section> defines a section in a document
+        <article> defines an independent, self-contained content
+        <aside> defines content aside from the content
+        <footer> defines a footer for a document or a section
+        <details> defines additional details that the user can open and close on demand
+        <summary> defines a heading for the <details> element 
+        It is common to do entire web layouts using the CSS float property
+        Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices
+        The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning -->
+
+        <!-- 29. Responsive
+        Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones)
+        If the CSS width property is set to 100%, the image will be responsive and scale up and down
+        If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger thant its original size
+        The text size can be set ith a "vw" unit, which means the "viewport width" -->
+
+        <!-- 30. Computercode
+        Todo -->
+
+        <!-- 31. Semantics
+        Todo -->
+
+        <!-- 32. Style Guide
+        Todo -->
+
+        <!-- 33. Entities
+        Todo -->
+
+        <!-- 34. Symbols
+        Todo -->
+
+        <!-- 35. Emojis
+        Todo -->
+
+        <!-- 36. charset
+        Todo -->
+
+        <!-- 37. URL Encode
+        Todo -->
+
+        <!-- 38. XHTML
+        Todo -->
+    </body>
+</html>
