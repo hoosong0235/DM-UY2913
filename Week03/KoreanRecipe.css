@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sizedBox16 {
+    height: 16px;
+}
+
+.box {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+.boxA {
+    background-color: #AAAAAA;
+}
+
+.boxC {
+    background-color: #CCCCCC;
+}
+
+.text {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textSelected {
+    color: #000000;
+}
+
+.textUnselected {
+    color: #777777;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.recipeTab {
+    float: right;
+    margin: 8px;
+}
+
+.recipe {
+    text-align: center;
+    margin: 8px;
+}
