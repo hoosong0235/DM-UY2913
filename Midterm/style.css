@@ -1,0 +1,194 @@
+/*
+
+1. CSS Flex Container
+
+display: flex;
+flex-direction: row, row-reverse, column, column-reverse;
+flex-wrap: nowrap, wrap, wrap-reverse;
+justify-content: flex-start, center, flex-end, space-around, space-between;
+align-items: stretch, flex-start, center, flex-end, baseline;
+align-content: stretch, flex-start, center, flex-end, space-around, space-between;
+gap: 10px;
+row-gap: 10px;
+column-gap: 10px;
+
+2. CSS Flex Items
+
+flex-grow: 0;
+flex-shrink: 1;
+align-self: stretch, flex-start, center, flex-end, baseline;
+
+3. CSS Flex Responsive
+
+@media (max-width: 800px) {
+    flex-direction: row, column;
+    flex: 25%, 50%, 100%;
+}
+
+*/
+
+/* Color Style */
+
+.workBlackBackground {
+    background-color: #1A1A1A;
+}
+
+.workBlack {
+    color: #1A1A1A;
+}
+
+.workGray3 {
+    color: #333333;
+}
+
+.workGray7 {
+    color: #777777;
+}
+
+.workGrayA {
+    color: #AAAAAA;
+}
+
+.workWhite {
+    color: #FFFFFF;
+}
+
+/* Text Style */
+
+.display {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.headline {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.titleBold {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.titleRegular {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.label {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Widget */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    /* border: solid 1px red; */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    /* border: solid 1px blue; */
+}
+
+.sizedBox16 {
+    width: 16px;
+    height: 16px;
+}
+
+.sizedBox24 {
+    width: 24px;
+    height: 24px;
+}
+
+.sizedBox32 {
+    width: 32px;
+    height: 32px;
+}
+
+.sizedBox64 {
+    width: 64px;
+    height: 64px;
+}
+
+.sizedBox128 {
+    width: 128px;
+    height: 128px;
+}
+
+.activeNavButton {
+    padding: 32px;
+    text-decoration: none;
+}
+
+.inActiveNavButton {
+    padding: 32px;
+    text-decoration: none;
+}
+
+.inActiveNavButton:hover {
+    color: #1A1A1A;
+}
+
+.activeTextButton {
+    text-decoration: none;
+}
+
+.inActiveTextButton {
+    text-decoration: none;
+}
+
+.inActiveTextButton:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive Widget */
+
+.rowColumn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    /* border: solid 1px purple; */
+}
+
+.responsivePadding {
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+.responsiveSizedBox {
+    width: 128px;
+    height: 128px;
+}
+
+/* Media Query */
