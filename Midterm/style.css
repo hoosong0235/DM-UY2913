@@ -96,6 +96,7 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 .row {
@@ -143,12 +144,10 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 
 .activeNavButton {
     padding: 32px;
-    text-decoration: none;
 }
 
 .inActiveNavButton {
     padding: 32px;
-    text-decoration: none;
 }
 
 .inActiveNavButton:hover {
@@ -183,24 +182,47 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     padding-right: 128px;
 }
 
-.responsiveSizedBox {
-    width: 0px;
-    height: 0px;
+.responsiveDesktop {
+    display: inherit;
 }
 
-.responsiveOrderA {
-    order: 1;
-}
-
-.responsiveOrderB {
-    order: 3;
+.responsiveMobile {
+    display: none;
 }
 
 /* Media Query */
 
 @media only screen and (max-width: 1633px) {
+    /* Text Style */
+
+    .display {
+        font-size: 48px;
+    }
+
+    .headline {
+        font-size: 36px;
+    }
+
+    .titleBold {
+        font-size: 24px;
+    }
+
+    .titleRegular {
+        font-size: 24px;
+    }
+
+    .body {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+
+    /* Responsive Widget */
+
     .rowColumn {
-        flex-direction: column;
+        display: inline;
     }
 
     .responsivePadding {
@@ -208,16 +230,11 @@ align-self: stretch, flex-start, center, flex-end, baseline;
         padding-right: 64px;
     }
 
-    .responsiveSizedBox {
-        width: 128px;
-        height: 128px;
-    }
-
-    .responsiveOrderA {
-        order: 3;
+    .responsiveDesktop {
+        display: none;
     }
     
-    .responsiveOrderB {
-        order: 1;
+    .responsiveMobile {
+        display: inherit;
     }
 }
