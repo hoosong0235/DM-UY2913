@@ -105,7 +105,6 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    /* border: solid 1px red; */
 }
 
 .column {
@@ -115,7 +114,6 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    /* border: solid 1px blue; */
 }
 
 .sizedBox16 {
@@ -178,7 +176,6 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    /* border: solid 1px purple; */
 }
 
 .responsivePadding {
@@ -187,8 +184,40 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 }
 
 .responsiveSizedBox {
-    width: 128px;
-    height: 128px;
+    width: 0px;
+    height: 0px;
+}
+
+.responsiveOrderA {
+    order: 1;
+}
+
+.responsiveOrderB {
+    order: 3;
 }
 
 /* Media Query */
+
+@media only screen and (max-width: 1633px) {
+    .rowColumn {
+        flex-direction: column;
+    }
+
+    .responsivePadding {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .responsiveSizedBox {
+        width: 128px;
+        height: 128px;
+    }
+
+    .responsiveOrderA {
+        order: 3;
+    }
+    
+    .responsiveOrderB {
+        order: 1;
+    }
+}
