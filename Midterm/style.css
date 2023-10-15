@@ -177,9 +177,17 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     align-content: center;
 }
 
-.responsivePadding {
+.responsiveLRPadding {
     padding-left: 128px;
     padding-right: 128px;
+}
+
+.responsiveTPadding {
+    padding-top: 128px;
+}
+
+.responsiveBPadding {
+    padding-bottom: 128px;
 }
 
 .responsiveDesktop {
@@ -225,9 +233,17 @@ align-self: stretch, flex-start, center, flex-end, baseline;
         display: inline;
     }
 
-    .responsivePadding {
+    .responsiveLRPadding {
         padding-left: 64px;
         padding-right: 64px;
+    }
+
+    .responsiveTPadding {
+        padding-top: 64px;
+    }
+    
+    .responsiveBPadding {
+        padding-bottom: 64px;
     }
 
     .responsiveDesktop {
