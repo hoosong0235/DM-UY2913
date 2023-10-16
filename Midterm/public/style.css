@@ -33,12 +33,12 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     background-color: #1A1A1A;
 }
 
-.workBlack {
-    color: #1A1A1A;
+.workGrayEBackground {
+    background-color: #EEEEEE;
 }
 
-.workGray3 {
-    color: #333333;
+.workBlack {
+    color: #1A1A1A;
 }
 
 .workGray7 {
@@ -47,6 +47,10 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 
 .workGrayA {
     color: #AAAAAA;
+}
+
+.workGrayE {
+    color: #EEEEEE;
 }
 
 .workWhite {
@@ -152,6 +156,16 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 
 .inActiveNavButton:hover {
     color: #1A1A1A;
+    background-color: #EEEEEE;
+}
+
+.inActiveNavButton2 {
+    padding: 32px;
+}
+
+.inActiveNavButton2:hover {
+    color: #FFFFFF;
+    background-color: #2B2B2B;
 }
 
 .activeTextButton {
