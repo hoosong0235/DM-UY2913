@@ -180,6 +180,14 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     color: #FFFFFF;
 }
 
+.thumbnail img {
+    transition: all 1s ease;
+}
+
+.thumbnail:hover img {
+    transform: scale(1.075);
+}
+
 /* Responsive Widget */
 
 .rowColumn {
