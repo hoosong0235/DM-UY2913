@@ -34,6 +34,9 @@ The website about me, seunghojang.com.
 
 <a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Design</a>
 
+<details>
+<summary>🖼️ Design image</summary>
+
 ### 1) Component and Style
 
 #### (1) Widget
@@ -63,15 +66,13 @@ The website about me, seunghojang.com.
     <img src="/Midterm/ReadmeAssets/Design/Desktop.png">
 </div>
 
-<br>
-
 ### 3) Mobile Design
 
 <div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Mobile.png">
 </div>
 
-<br>
+</details>
 
 ## 5. Prototype
 
@@ -87,13 +88,272 @@ The website about me, seunghojang.com.
 
 ### 1) CSS
 
-#### (1) Widget
+<a href="public/style.css" target="_blank">📄 Style Sheet</a><br>
+
+<details>
+<summary>⌨️ Details</summary>
+
+#### (1) Color Style
+
+    /* Color Style */
+
+    .workBlackBackground {
+        background-color: #1A1A1A;
+    }
+
+    .workGrayEBackground {
+        background-color: #EEEEEE;
+    }
+
+    .workBlack {
+        color: #1A1A1A;
+    }
+
+    .workGray7 {
+        color: #777777;
+    }
+
+    .workGrayA {
+        color: #AAAAAA;
+    }
+
+    .workGrayE {
+        color: #EEEEEE;
+    }
+
+    .workWhite {
+        color: #FFFFFF;
+    }
 
 #### (2) Text Style
 
-#### (3) Color Style
+    /* Text Style */
 
-<a href="public/style.css" target="_blank">📄 Style Sheet</a><br>
+    .display {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 64px;
+    }
+
+    .headline {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    .titleBold {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .titleRegular {
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-size: 36px;
+    }
+
+    .body {
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .label {
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+#### (3) Widget
+
+    /* Widget */
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    .sizedBox16 {
+        width: 16px;
+        height: 16px;
+    }
+
+    .sizedBox24 {
+        width: 24px;
+        height: 24px;
+    }
+
+    .sizedBox32 {
+        width: 32px;
+        height: 32px;
+    }
+
+    .sizedBox64 {
+        width: 64px;
+        height: 64px;
+    }
+
+    .sizedBox128 {
+        width: 128px;
+        height: 128px;
+    }
+
+    .activeNavButton {
+        padding: 32px;
+    }
+
+    .inActiveNavButton {
+        padding: 32px;
+    }
+
+    .inActiveNavButton:hover {
+        color: #1A1A1A;
+        background-color: #EEEEEE;
+    }
+
+    .inActiveNavButton2 {
+        padding: 32px;
+    }
+
+    .inActiveNavButton2:hover {
+        color: #FFFFFF;
+        background-color: #2B2B2B;
+    }
+
+    .activeTextButton {
+        text-decoration: none;
+    }
+
+    .inActiveTextButton {
+        text-decoration: none;
+    }
+
+    .inActiveTextButton:hover {
+        color: #FFFFFF;
+    }
+
+    .thumbnail img {
+        transition: all 1s ease;
+    }
+
+    .thumbnail:hover img {
+        transform: scale(1.075);
+    }
+
+#### (4) Responsive Widget
+
+    /* Responsive Widget */
+
+    .rowColumn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    .responsiveLRPadding {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    .responsiveTPadding {
+        padding-top: 128px;
+    }
+
+    .responsiveBPadding {
+        padding-bottom: 128px;
+    }
+
+    .responsiveDesktop {
+        display: inherit;
+    }
+
+    .responsiveMobile {
+        display: none;
+    }
+
+#### (5) Media Query
+
+    /* Media Query */
+
+    @media only screen and (max-width: 1633px) {
+        /* Text Style */
+
+        .display {
+            font-size: 48px;
+        }
+
+        .headline {
+            font-size: 36px;
+        }
+
+        .titleBold {
+            font-size: 24px;
+        }
+
+        .titleRegular {
+            font-size: 24px;
+        }
+
+        .body {
+            font-size: 16px;
+        }
+
+        .label {
+            font-size: 12px;
+        }
+
+        /* Responsive Widget */
+
+        .rowColumn {
+            display: inline;
+        }
+
+        .responsiveLRPadding {
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+
+        .responsiveTPadding {
+            padding-top: 64px;
+        }
+
+        .responsiveBPadding {
+            padding-bottom: 64px;
+        }
+
+        .responsiveDesktop {
+            display: none;
+        }
+
+        .responsiveMobile {
+            display: inherit;
+        }
+    }
+
+</details>
 
 ### 2) HTML
 
@@ -111,9 +371,11 @@ The website about me, seunghojang.com.
 
 ## 8. Improvement
 
-### 1) Dynamic Website
+### 1) Dynamic
 
 https://www.apple.com/iphone-15/  
 https://www.apple.com/iphone-15-pro/
 
-### 2) Interactive website
+### 2) Interactive
+
+### 3) Details
