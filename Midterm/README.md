@@ -9,7 +9,7 @@ The website about me, seunghojang.com.
 <details>
 <summary>🖼️ Moodboard image</summary>
 
-![](/ReadmeAssets/Moodboard/Moodboard.png)
+![](/Midterm/ReadmeAssets/Moodboard/Moodboard.png)
 
 </details>
 
@@ -18,12 +18,12 @@ The website about me, seunghojang.com.
 <details>
 <summary>🖼️ Sitemap and Wireframe image</summary>
 
-![](/ReadmeAssets/Sitemap%20and%20Wireframe/Sitemap.png)
+![](/Midterm/ReadmeAssets/Sitemap%20and%20Wireframe/Sitemap.png)
 
-![](/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%201.png)
-![](/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%202.png)
-![](/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%203.png)
-![](/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%204.png)
+![](/Midterm/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%201.png)
+![](/Midterm/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%202.png)
+![](/Midterm/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%203.png)
+![](/Midterm/ReadmeAssets/Sitemap%20and%20Wireframe/Work%20Wireframe%204.png)
 
 </details>
 
@@ -53,17 +53,17 @@ Black, Gray7, GrayA, GrayE, White
 ### 2) Desktop Design
 
 <div style="display: flex; justify-content: center;">
-    <img src="/ReadmeAssets/Design/Desktop/Researcher.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Desktop/Developer.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Desktop/Designer.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop/Researcher.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop/Developer.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop/Designer.png" style="width: 25%;">
 </div>
 
 <br>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/ReadmeAssets/Design/Desktop/OTL for KAIST.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Desktop/The Voice.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Desktop/CFS for CofferOS.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop/OTL for KAIST.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop/The Voice.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop/CFS for CofferOS.png" style="width: 25%;">
 </div>
 
 <a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Desktop Design</a>
@@ -71,17 +71,17 @@ Black, Gray7, GrayA, GrayE, White
 ### 3) Mobile Design
 
 <div style="display: flex; justify-content: center;">
-    <img src="/ReadmeAssets/Design/Mobile/Researcher.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Mobile/Developer.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Mobile/Designer.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile/Researcher.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile/Developer.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile/Designer.png" style="width: 25%;">
 </div>
 
 <br>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/ReadmeAssets/Design/Mobile/OTL for KAIST.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Mobile/The Voice.png" style="width: 25%;">
-    <img src="/ReadmeAssets/Design/Mobile/CFS for CofferOS.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile/OTL for KAIST.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile/The Voice.png" style="width: 25%;">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile/CFS for CofferOS.png" style="width: 25%;">
 </div>
 
 <a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Mobile Design</a>
