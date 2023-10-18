@@ -34,45 +34,7 @@ The website about me, seunghojang.com.
 
 <a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Design</a>
 
-<details>
-<summary>🖼️ Design image</summary>
-
-### 1) Component and Style
-
-#### (1) Widget
-
-<div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/WorkBanner.png">
-    <img src="/Midterm/ReadmeAssets/Design/Header.png">
-    <img src="/Midterm/ReadmeAssets/Design/Footer.png">
-    <img src="/Midterm/ReadmeAssets/Design/Logo.png">
-</div>
-
-#### (2) Text Style
-
-<div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/TextStyle.png">
-</div>
-
-#### (3) Color Style
-
-<div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/ColorStyle.png">
-</div>
-
-### 2) Desktop Design
-
-<div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop.png">
-</div>
-
-### 3) Mobile Design
-
-<div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile.png">
-</div>
-
-</details>
+![](/Midterm/ReadmeAssets/Design/Design.png)
 
 ## 5. Prototype
 
@@ -91,81 +53,9 @@ The website about me, seunghojang.com.
 <a href="public/style.css" target="_blank">📄 Style Sheet</a><br>
 
 <details>
-<summary>⌨️ Details</summary>
+<summary>⌨️ Code Snippets</summary>
 
-#### (1) Color Style
-
-    /* Color Style */
-
-    .workBlackBackground {
-        background-color: #1A1A1A;
-    }
-
-    .workGrayEBackground {
-        background-color: #EEEEEE;
-    }
-
-    .workBlack {
-        color: #1A1A1A;
-    }
-
-    .workGray7 {
-        color: #777777;
-    }
-
-    .workGrayA {
-        color: #AAAAAA;
-    }
-
-    .workGrayE {
-        color: #EEEEEE;
-    }
-
-    .workWhite {
-        color: #FFFFFF;
-    }
-
-#### (2) Text Style
-
-    /* Text Style */
-
-    .display {
-        font-family: 'Inter', sans-serif;
-        font-weight: bold;
-        font-size: 64px;
-    }
-
-    .headline {
-        font-family: 'Inter', sans-serif;
-        font-weight: bold;
-        font-size: 48px;
-    }
-
-    .titleBold {
-        font-family: 'Inter', sans-serif;
-        font-weight: bold;
-        font-size: 36px;
-    }
-
-    .titleRegular {
-        font-family: 'Inter', sans-serif;
-        font-weight: normal;
-        font-size: 36px;
-    }
-
-    .body {
-        font-family: 'Inter', sans-serif;
-        font-weight: normal;
-        font-size: 24px;
-    }
-
-    .label {
-        font-family: 'Inter', sans-serif;
-        font-weight: normal;
-        font-size: 16px;
-    }
-
-#### (3) Widget
+#### (1) Widget
 
     /* Widget */
 
@@ -260,7 +150,7 @@ The website about me, seunghojang.com.
         transform: scale(1.075);
     }
 
-#### (4) Responsive Widget
+#### (2) Responsive Widget
 
     /* Responsive Widget */
 
@@ -294,7 +184,7 @@ The website about me, seunghojang.com.
         display: none;
     }
 
-#### (5) Media Query
+#### (3) Media Query
 
     /* Media Query */
 
