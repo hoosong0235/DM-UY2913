@@ -15,6 +15,9 @@ The website about me, seunghojang.com.
 
 ## 3. Sitemap and Wireframe
 
+<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=0%3A1&mode=design&t=dOhSwSeQTsSUq9ue-1">🎨 Figma: Wireframe Design</a><br>
+<a href="https://www.figma.com/proto/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?page-id=0%3A1&type=design&node-id=13-31&viewport=158%2C-651%2C0.18&t=G81eDzx9lISq16DH-1&scaling=scale-down&starting-point-node-id=13%3A31&show-proto-sidebar=1&mode=design">🛠️ Figma: Wireframe Prototype</a><br>
+
 <details>
 <summary>🖼️ Sitemap and Wireframe image</summary>
 
@@ -27,18 +30,20 @@ The website about me, seunghojang.com.
 
 </details>
 
-<br>
-
-<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=0%3A1&mode=design&t=dOhSwSeQTsSUq9ue-1">🎨 Figma: Wireframe Design</a><br>
-<a href="https://www.figma.com/proto/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?page-id=0%3A1&type=design&node-id=13-31&viewport=158%2C-651%2C0.18&t=G81eDzx9lISq16DH-1&scaling=scale-down&starting-point-node-id=13%3A31&show-proto-sidebar=1&mode=design">🛠️ Figma: Wireframe Prototype</a><br>
-
 ## 4. Design
 
 ### 1) Component and Style
 
 #### (1) Widget
 
-Banner, Icon, Header, Footer
+Banner, Header, Footer, Icon
+
+<div align="center">
+    <img src="/Midterm/ReadmeAssets/Design/WorkBanner.png">
+    <img src="/Midterm/ReadmeAssets/Design/Header.png">
+    <img src="/Midterm/ReadmeAssets/Design/Footer.png">
+    <img src="/Midterm/ReadmeAssets/Design/Logo.png">
+</div>
 
 #### (2) Text Style
 
@@ -46,11 +51,17 @@ Desktop, Mobile
 
 Display, Headline, TitleBold, TitleRegular, Body, Label
 
+<div align="center">
+    <img src="/Midterm/ReadmeAssets/Design/TextStyle.png">
+</div>
+
 #### (3) Color Style
 
 Black, Gray7, GrayA, GrayE, White
 
 ### 2) Desktop Design
+
+<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Desktop Design</a>
 
 <div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Desktop1.png">
@@ -62,9 +73,9 @@ Black, Gray7, GrayA, GrayE, White
     <img src="/Midterm/ReadmeAssets/Design/Desktop2.png">
 </div>
 
-<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Desktop Design</a>
-
 ### 3) Mobile Design
+
+<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Mobile Design</a>
 
 <div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Mobile1.png">
@@ -75,8 +86,6 @@ Black, Gray7, GrayA, GrayE, White
 <div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Mobile2.png">
 </div>
-
-<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Mobile Design</a>
 
 ## 5. Prototype
 
