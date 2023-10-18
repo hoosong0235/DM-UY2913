@@ -32,11 +32,11 @@ The website about me, seunghojang.com.
 
 ## 4. Design
 
+<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Design</a>
+
 ### 1) Component and Style
 
 #### (1) Widget
-
-Banner, Header, Footer, Icon
 
 <div align="center">
     <img src="/Midterm/ReadmeAssets/Design/WorkBanner.png">
@@ -47,45 +47,31 @@ Banner, Header, Footer, Icon
 
 #### (2) Text Style
 
-Desktop, Mobile
-
-Display, Headline, TitleBold, TitleRegular, Body, Label
-
 <div align="center">
     <img src="/Midterm/ReadmeAssets/Design/TextStyle.png">
 </div>
 
 #### (3) Color Style
 
-Black, Gray7, GrayA, GrayE, White
+<div align="center">
+    <img src="/Midterm/ReadmeAssets/Design/ColorStyle.png">
+</div>
 
 ### 2) Desktop Design
 
-<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Desktop Design</a>
-
 <div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop1.png">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop.png">
 </div>
 
 <br>
-
-<div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop2.png">
-</div>
 
 ### 3) Mobile Design
 
-<a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Mobile Design</a>
-
 <div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile1.png">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile.png">
 </div>
 
 <br>
-
-<div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile2.png">
-</div>
 
 ## 5. Prototype
 
