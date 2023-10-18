@@ -52,7 +52,7 @@ Black, Gray7, GrayA, GrayE, White
 
 ### 2) Desktop Design
 
-<div style="align: center;">
+<div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Desktop/Researcher.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Desktop/Developer.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Desktop/Designer.png" style="width: 25%;">
@@ -60,7 +60,7 @@ Black, Gray7, GrayA, GrayE, White
 
 <br>
 
-<div style="align: center;">
+<div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Desktop/OTL for KAIST.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Desktop/The Voice.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Desktop/CFS for CofferOS.png" style="width: 25%;">
@@ -70,7 +70,7 @@ Black, Gray7, GrayA, GrayE, White
 
 ### 3) Mobile Design
 
-<div style="align: center;">
+<div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Mobile/Researcher.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Mobile/Developer.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Mobile/Designer.png" style="width: 25%;">
@@ -78,7 +78,7 @@ Black, Gray7, GrayA, GrayE, White
 
 <br>
 
-<div style="align: center;">
+<div align="center">
     <img src="/Midterm/ReadmeAssets/Design/Mobile/OTL for KAIST.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Mobile/The Voice.png" style="width: 25%;">
     <img src="/Midterm/ReadmeAssets/Design/Mobile/CFS for CofferOS.png" style="width: 25%;">
