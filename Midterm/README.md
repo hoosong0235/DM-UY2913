@@ -52,36 +52,28 @@ Black, Gray7, GrayA, GrayE, White
 
 ### 2) Desktop Design
 
-<div style="display: flex; justify-content: center; align-items: flex-start">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop/Researcher.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop/Developer.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop/Designer.png" style="width: 25%;">
+<div align="center">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop1.png">
 </div>
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: flex-start">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop/OTL for KAIST.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop/The Voice.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Desktop/CFS for CofferOS.png" style="width: 25%;">
+<div align="center">
+    <img src="/Midterm/ReadmeAssets/Design/Desktop2.png">
 </div>
 
 <a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Desktop Design</a>
 
 ### 3) Mobile Design
 
-<div style="display: flex; justify-content: center; align-items: flex-start">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile/Researcher.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile/Developer.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile/Designer.png" style="width: 25%;">
+<div align="center">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile1.png">
 </div>
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: flex-start">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile/OTL for KAIST.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile/The Voice.png" style="width: 25%;">
-    <img src="/Midterm/ReadmeAssets/Design/Mobile/CFS for CofferOS.png" style="width: 25%;">
+<div align="center">
+    <img src="/Midterm/ReadmeAssets/Design/Mobile2.png">
 </div>
 
 <a href="https://www.figma.com/file/b9tdhg9q64ka04KFMAMQ7J/DM-UY-2193-Intro-to-Web-Development?type=design&node-id=28%3A2&mode=design&t=hnl1e84whSAphNEs-1">🎨 Figma: Mobile Design</a>
