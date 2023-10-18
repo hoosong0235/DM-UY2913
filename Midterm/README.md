@@ -51,7 +51,7 @@ The website about me, seunghojang.com.
 #### (2) Text Style
 
 <div align="center">
-    <img src="/Midterm/ReadmeAssets/Design/TextStyle.png">
+    <!-- <img src="/Midterm/ReadmeAssets/Design/TextStyle.png"> -->
 </div>
 
 #### (3) Color Style
