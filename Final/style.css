@@ -121,6 +121,11 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     flex: 7;
 }
 
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
 .thumbnail .one {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
@@ -157,3 +162,36 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 /* Responsive Widget */
 
 /* Media Query */
+
+@media only screen and (max-width: 1633px) {
+    .thumbnail img {
+        height: 100%;
+        width: auto;
+    }
+
+    .thumbnail .one {
+        font-size: 32px;
+    }
+    
+    .thumbnail:hover .one {
+        font-size: 48px;
+    }
+    
+    .thumbnail .two {
+        width: 0px;
+        height: 0px;
+    }
+    
+    .thumbnail:hover .two {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .thumbnail .three {
+        font-size: 0px;
+    }
+    
+    .thumbnail:hover .three {
+        font-size: 16px;
+    }
+}
