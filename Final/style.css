@@ -27,6 +27,13 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 
 */
 
+/* ID */
+#map {
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+}
+
 /* Color Style */
 
 .canadaWhiteBackground {
