@@ -36,20 +36,28 @@ async function initMap() {
     ];
 
     tourStops.forEach(({ position, title }, i) => {
-      const pinView = new PinView({
-        glyph: `${i + 1}`,
-      });
+        const pinView = new PinView({
+            glyph: `${i + 1}`,
+        });
 
-      const marker = new AdvancedMarkerView({
-        position,
-        map,
-        title: `${i + 1}. ${title}`,
-        content: pinView.element,
-      });
-  
-      marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
-        window.location.href = "niagaraFalls5.html";
-      });
+        const marker = new AdvancedMarkerView({
+            position,
+            map,
+            title: `${i + 1}. ${title}`,
+            content: pinView.element,
+        });
+
+        console.log(marker.title);
+    
+        if (marker.title == "1. Niagara Falls State Park Administration") {
+            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
+                window.location.href = "niagaraFalls1.html";
+            });
+        } else {
+            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
+                window.location.href = "niagaraFalls5.html";
+            });
+        }
     });
 }
 
