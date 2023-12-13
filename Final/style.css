@@ -166,6 +166,23 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     font-size: 32px;
 }
 
+.four {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 108px;
+    transition: all 1s ease;
+}
+
+.buttonMargin {
+    left: 128px;
+    bottom: 128px;
+}
+
+.buttonSize {
+    width: 128px;
+    height: 128px;
+}
+
 /* Responsive Widget */
 
 /* Media Query */
@@ -200,5 +217,19 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     
     .thumbnail:hover .three {
         font-size: 16px;
+    }
+
+    .four {
+        font-size: 54px;
+    }
+
+    .buttonMargin {
+        left: 64px;
+        bottom: 64px;
+    }
+
+    .buttonSize {
+        width: 64px;
+        height: 64px;
     }
 }

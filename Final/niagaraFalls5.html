@@ -6,11 +6,33 @@
         <meta charset="UTF-8">
         <meta name="viewprot" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="slideshowStyle.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <div class="column canadaRedBackground canadaWhite" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap;">
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+                <div class="four">NIAGARA FALLS NIAGARA FALLS NIAGARA FALLS</div>
+        </div>
+
         <!-- Slideshow -->
-        <div style="height: 100vh; display: flex;">
+        <div style="position: absolute; height: 100vh; width: 100%; display: flex;">
             <!-- Slideshow container -->
             <div class="slideshow-container">
 
@@ -60,6 +82,21 @@
                 <span class="dot" onclick="currentSlide(5)"></span>
             </div> -->
         </div>
+
+        <div id="likeButton" class="buttonMargin" style="position: absolute" onclick="toggleImage()">
+            <img id="likeImage" class="buttonSize" src="Assets/Icon/WhiteLike.svg">
+        </div>
+
+        <script>
+            function toggleImage() {
+                var img = document.getElementById('likeImage');
+                if (img.src.endsWith('WhiteLike.svg')) {
+                    img.src = 'Assets/Icon/WhiteLiked.svg';
+                } else {
+                    img.src = 'Assets/Icon/WhiteLike.svg';
+                }
+            }
+        </script>
     </body>
 
     <script src="slideshowScript.js"></script>
