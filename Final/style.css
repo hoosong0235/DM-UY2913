@@ -1,0 +1,159 @@
+/*
+
+1. CSS Flex Container
+
+display: flex;
+flex-direction: row, row-reverse, column, column-reverse;
+flex-wrap: nowrap, wrap, wrap-reverse;
+justify-content: flex-start, center, flex-end, space-around, space-between;
+align-items: stretch, flex-start, center, flex-end, baseline;
+align-content: stretch, flex-start, center, flex-end, space-around, space-between;
+gap: 10px;
+row-gap: 10px;
+column-gap: 10px;
+
+2. CSS Flex Items
+
+flex-grow: 0;
+flex-shrink: 1;
+align-self: stretch, flex-start, center, flex-end, baseline;
+
+3. CSS Flex Responsive
+
+@media (max-width: 800px) {
+    flex-direction: row, column;
+    flex: 25%, 50%, 100%;
+}
+
+*/
+
+/* Color Style */
+
+.canadaWhiteBackground {
+    background-color: #FFFFFF;
+}
+
+.canadaRedBackground {
+    background-color: #FF0000;
+}
+
+.canadaWhite {
+    color: #FFFFFF;
+}
+
+.canadaRed {
+    color: #FF0000;
+}
+
+/* Text Style */
+
+.display {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.headline {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.titleBold {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.titleRegular {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.label {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Widget */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.thumbnail {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.thumbnail:hover {
+    flex: 7;
+}
+
+.thumbnail .one {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    transition: all 1s ease;
+}
+
+.thumbnail:hover .one {
+    font-size: 96px;
+}
+
+.thumbnail .two {
+    width: 0px;
+    height: 0px;
+    transition: all 0.33s ease;
+}
+
+.thumbnail:hover .two {
+    width: 16px;
+    height: 16px;
+}
+
+.thumbnail .three {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 0px;
+    transition: all 0.33s ease;
+}
+
+.thumbnail:hover .three {
+    font-size: 32px;
+}
+
+/* Responsive Widget */
+
+/* Media Query */
