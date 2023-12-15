@@ -6,19 +6,21 @@
         <meta charset="UTF-8">
         <meta name="viewprot" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+
+        <script src="sizedBox.js"></script>
     </head>
 
     <body>
-        <div class="column" style="height: 100vh; overflow: hidden;">
+        <div class="column" style="height: 100vh; overflow: hidden; position: absolute;">
             <div class="thumbnail canadaRedBackground canadaWhite">
                 <div class="column" style="position: absolute; left: 50%; transform: translateX(-50%);">                    
                     <div class="one">NIAGARA FALLS</div>
                     <div class="two"></div>
                     <div class="three">November 21 - 22</div>
                 </div>
-                <a href="niagaraFalls.html">
+                <div onclick="customAnimate('niagaraFalls.html')">
                     <img src="Assets\Image\NiagaraFalls.png">
-                </a>
+                </div>
             </div>
             <div class="thumbnail canadaWhiteBackground canadaRed">
                 <div class="column" style="position: absolute; left: 50%; transform: translateX(-50%);">                    
@@ -49,6 +51,149 @@
                 <a href="montreal.html">
                     <img src="Assets\Image\Montreal.png" style="width: 100%;">
                 </a>
+            </div>
+        </div>
+
+        <div class="row" id="animation" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: collapse;">
+            <div class="column" style="width: 25%;">
+                <div class="sizedBox"></div>
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                </div>
+                <div class="sizedBox"></div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="sizedBox"></div>
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                    <div class="five">NIAGARA FALLS</div>
+                </div>
+                <div class="sizedBox"></div>
             </div>
         </div>
     </body>

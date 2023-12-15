@@ -131,6 +131,11 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 .thumbnail img {
     width: 100%;
     height: auto;
+    transition: all 2s ease;
+}
+
+.thumbnail:hover img {
+    transform: scale(1.25);
 }
 
 .thumbnail .one {
@@ -171,6 +176,16 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     font-weight: bold;
     font-size: 108px;
     transition: all 1s ease;
+}
+
+.five {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.sizedBox {
+    height: 360vh; /*from 360vh to 0vh*/
 }
 
 .buttonMargin {
