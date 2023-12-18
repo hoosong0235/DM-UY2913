@@ -7,7 +7,10 @@
         <meta name="viewprot" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
 
-        <script src="sizedBox.js"></script>
+        <script src="niagaraFallsAnimation.js"></script>
+        <script src="torontoAnimation.js"></script>
+        <script src="quebecCityAnimation.js"></script>
+        <script src="montrealAnimation.js"></script>
     </head>
 
     <body>
@@ -18,9 +21,9 @@
                     <div class="two"></div>
                     <div class="three">November 21 - 22</div>
                 </div>
-                <div onclick="customAnimate('niagaraFalls.html')">
-                    <img src="Assets\Image\NiagaraFalls.png">
-                </div>
+                <a href="#" onclick="niagaraFallsAnimateIn()">
+                    <img src="Assets\Image\index\NiagaraFalls.png">
+                </a>
             </div>
             <div class="thumbnail canadaWhiteBackground canadaRed">
                 <div class="column" style="position: absolute; left: 50%; transform: translateX(-50%);">                    
@@ -28,8 +31,8 @@
                     <div class="two"></div>
                     <div class="three">November 22 - 23</div>
                 </div>
-                <a href="toronto.html">
-                    <img src="Assets\Image\Toronto.png">
+                <a href="#" onclick="torontoAnimateIn()">
+                    <img src="Assets\Image\index\Toronto.png">
                 </a>
             </div>
             <div class="thumbnail canadaRedBackground canadaWhite">
@@ -38,8 +41,8 @@
                     <div class="two"></div>
                     <div class="three">November 23 - 25</div>
                 </div>
-                <a href="quebecCity.html">
-                    <img src="Assets\Image\QuebecCity.png">
+                <a href="#" onclick="quebecCityAnimateIn()">
+                    <img src="Assets\Image\index\QuebecCity.png">
                 </a>
             </div>
             <div class="thumbnail canadaWhiteBackground canadaRed">
@@ -48,152 +51,581 @@
                     <div class="two"></div>
                     <div class="three">November 25 - 27</div>
                 </div>
-                <a href="montreal.html">
-                    <img src="Assets\Image\Montreal.png" style="width: 100%;">
+                <a href="#" onclick="montrealAnimateIn()">
+                    <img src="Assets\Image\index\Montreal.png" style="width: 100%;">
                 </a>
             </div>
         </div>
 
-        <div class="row" id="animation" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: collapse;">
+        <div class="row" id="niagaraFallsStack" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: collapse;">
             <div class="column" style="width: 25%;">
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
             </div>
             <div class="column" style="width: 25%;">
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
             </div>
             <div class="column" style="width: 25%;">
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
             </div>
             <div class="column" style="width: 25%;">
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
+            </div>
+        </div>
+
+        <div class="row" id="torontoStack" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: collapse;">
+            <div class="column" style="width: 25%;">
+                <div class="torontoSizedBox"></div>
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                </div>
+                <div class="torontoSizedBox"></div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="torontoSizedBox"></div>
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                    <div class="torontoTextStyle">TORONTO</div>
+                </div>
+                <div class="torontoSizedBox"></div>
+            </div>
+        </div>
+
+        <div class="row" id="quebecCityStack" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: collapse;">
+            <div class="column" style="width: 25%;">
+                <div class="quebecCitySizedBox"></div>
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                </div>
+                <div class="quebecCitySizedBox"></div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="quebecCitySizedBox"></div>
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                    <div class="quebecCityTextStyle">QUEBEC CITY</div>
+                </div>
+                <div class="quebecCitySizedBox"></div>
+            </div>
+        </div>
+
+        <div class="row" id="montrealStack" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: collapse;">
+            <div class="column" style="width: 25%;">
+                <div class="montrealSizedBox"></div>
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                </div>
+                <div class="montrealSizedBox"></div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="montrealSizedBox"></div>
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                </div>
+            </div>
+            <div class="column" style="width: 25%;">
+                <div class="column canadaWhiteBackground canadaRed" style="width: 100%;">
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                    <div class="montrealTextStyle">MONTREAL</div>
+                </div>
+                <div class="montrealSizedBox"></div>
             </div>
         </div>
     </body>

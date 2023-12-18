@@ -8,153 +8,153 @@
         <title>Canada Journey</title>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <link rel="stylesheet" href="style.css">
-        <script type="module" src="index.js"></script>
-        <script src="sizedBox.js"></script>
+        <script type="module" src="niagaraFallsMap.js"></script>
+        <script src="niagaraFallsAnimation.js"></script>
     </head>
 
     <body>
         <div id="map" style="position: absolute;"></div>
 
-        <div class="row" id="animation" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: visible;">
+        <div class="row" id="niagaraFallsStack" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: visible;">
             <div class="column" style="width: 25%;">
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
             </div>
             <div class="column" style="width: 25%;">
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
             </div>
             <div class="column" style="width: 25%;">
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
             </div>
             <div class="column" style="width: 25%;">
                 <div class="column canadaRedBackground canadaWhite" style="width: 100%;">
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
-                    <div class="five">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
+                    <div class="niagaraFallsTextStyle">NIAGARA FALLS</div>
                 </div>
-                <div class="sizedBox"></div>
+                <div class="niagaraFallsSizedBox"></div>
             </div>
         </div>
 
@@ -164,7 +164,7 @@
               v: "beta",
             });
 
-            customAnimateReverse();
+            niagaraFallsAnimateOut();
         </script>
     </body>
 </html>

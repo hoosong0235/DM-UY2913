@@ -178,13 +178,43 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     transition: all 1s ease;
 }
 
-.five {
+.niagaraFallsTextStyle {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     font-size: 80px;
 }
 
-.sizedBox {
+.niagaraFallsSizedBox {
+    height: 360vh; /*from 360vh to 0vh*/
+}
+
+.torontoTextStyle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.torontoSizedBox {
+    height: 360vh; /*from 360vh to 0vh*/
+}
+
+.quebecCityTextStyle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.quebecCitySizedBox {
+    height: 360vh; /*from 360vh to 0vh*/
+}
+
+.montrealTextStyle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.montrealSizedBox {
     height: 360vh; /*from 360vh to 0vh*/
 }
 
