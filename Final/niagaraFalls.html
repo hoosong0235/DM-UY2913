@@ -7,6 +7,7 @@
 
         <title>Canada Journey</title>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="modalStyle.css">
         <link rel="stylesheet" href="style.css">
         <script type="module" src="niagaraFallsMap.js"></script>
         <script src="niagaraFallsAnimation.js"></script>
@@ -14,6 +15,53 @@
 
     <body>
         <div id="map" style="position: absolute;"></div>
+
+        <section id="niagaraFallsModal1" class="modal hidden">
+            <div class="flex">
+              <button id="niagaraFallsCloseButton1" class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/niagaraFalls/niagaraFalls1.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section id="niagaraFallsModal2" class="modal hidden">
+            <div class="flex">
+              <button id="niagaraFallsCloseButton2" class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/niagaraFalls/niagaraFalls2.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section id="niagaraFallsModal3" class="modal hidden">
+            <div class="flex">
+              <button id="niagaraFallsCloseButton3" class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/niagaraFalls/niagaraFalls3.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section id="niagaraFallsModal4" class="modal hidden">
+            <div class="flex">
+              <button id="niagaraFallsCloseButton4" class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/niagaraFalls/niagaraFalls4.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section id="niagaraFallsModal5" class="modal hidden">
+            <div class="flex">
+              <button id="niagaraFallsCloseButton5" class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/niagaraFalls/niagaraFalls5.JPEG" style="width: 100%;">
+            </div>
+        </section>
+          
+        <div class="overlay hidden"></div>
 
         <div class="row" id="niagaraFallsStack" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: visible;">
             <div class="column" style="width: 25%;">

@@ -1,3 +1,33 @@
+const niagaraFallsModal1 = document.querySelector("#niagaraFallsModal1");
+const niagaraFallsModal2 = document.querySelector("#niagaraFallsModal2");
+const niagaraFallsModal3 = document.querySelector("#niagaraFallsModal3");
+const niagaraFallsModal4 = document.querySelector("#niagaraFallsModal4");
+const niagaraFallsModal5 = document.querySelector("#niagaraFallsModal5");
+const niagaraFallsModals = [niagaraFallsModal1, niagaraFallsModal2, niagaraFallsModal3, niagaraFallsModal4, niagaraFallsModal5];
+const overlay = document.querySelector(".overlay");
+const niagaraFallsCloseButton1 = document.querySelector("#niagaraFallsCloseButton1");
+const niagaraFallsCloseButton2 = document.querySelector("#niagaraFallsCloseButton2");
+const niagaraFallsCloseButton3 = document.querySelector("#niagaraFallsCloseButton3");
+const niagaraFallsCloseButton4 = document.querySelector("#niagaraFallsCloseButton4");
+const niagaraFallsCloseButton5 = document.querySelector("#niagaraFallsCloseButton5");
+const niagaraFallsCloseButtons = [niagaraFallsCloseButton1, niagaraFallsCloseButton2, niagaraFallsCloseButton3, niagaraFallsCloseButton4, niagaraFallsCloseButton5];
+
+function openModal(i) {
+    niagaraFallsModals[i].classList.remove("hidden");
+    overlay.classList.remove("hidden");
+};
+
+function closeModal(i) {
+    niagaraFallsModals[i].classList.add("hidden");
+    overlay.classList.add("hidden");
+};
+
+niagaraFallsCloseButtons.forEach((niagaraFAllsCloseButton, i) => {
+    niagaraFAllsCloseButton.addEventListener("click", () => {
+        closeModal(i);
+    })
+})
+
 async function initMap() {
     const posNiagaraFalls = {lat: 43.08331405964661, lng: -79.07403101822439};
     
@@ -48,16 +78,9 @@ async function initMap() {
         });
 
         console.log(marker.title);
-    
-        if (marker.title == "1. Niagara Falls State Park Administration") {
-            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
-                window.location.href = "niagaraFalls1.html";
-            });
-        } else {
-            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
-                window.location.href = "niagaraFalls5.html";
-            });
-        }
+        marker.addEventListener("gmp-click", () => {
+            openModal(i);
+        });
     });
 }
 
