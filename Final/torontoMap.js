@@ -1,5 +1,25 @@
+const torontoModals = document.getElementsByClassName("modal");
+const overlay = document.querySelector(".overlay");
+const torontoCloseButtons = document.getElementsByClassName("btn-close")
+
+function openModal(i) {
+    torontoModals[i].classList.remove("hidden");
+    overlay.classList.remove("hidden");
+};
+
+function closeModal(i) {
+    torontoModals[i].classList.add("hidden");
+    overlay.classList.add("hidden");
+};
+
+Array.prototype.forEach.call(torontoCloseButtons, function(torontoCloseButton, i) {
+    torontoCloseButton.addEventListener("click", () => {
+        closeModal(i);
+    })
+});
+
 async function initMap() {
-    const posToronto = {lat: 43.64265157528579, lng: -79.3869817008872};
+    const posToronto = {lat: 43.663594460109366, lng: -79.39615066376184};
     
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
@@ -7,31 +27,31 @@ async function initMap() {
     const infoWindow = new google.maps.InfoWindow();
     
     let map = new Map(document.getElementById("map"), {
-        zoom: 16,
+        zoom: 14,
         center: posToronto,
         mapId: "DEMO_MAP_ID",
     });
 
     const tourStops = [
         {
-            position: {lat: 43.08684355911157, lng: -79.0665401778558},
-            title: "Niagara Falls State Park Administration",
+            position: {lat: 43.67902976931161, lng: -79.40983503789799},
+            title: "Casa Loma",
         },
         {
-            position: {lat: 43.08157152748957, lng: -79.07100348838995},
-            title: "Niagara Falls Adventures",
+            position: {lat: 43.67783949105643, lng: -79.4083056696965},
+            title: "Baldwin Steps",
         },
         {
-            position: {lat: 43.09037318206784, lng: -79.06755613706792},
-            title: "Rainbow Bridge",
+            position: {lat: 43.66829846783033, lng: -79.3949302832289},
+            title: "Royal Ontario Museum",
         },
         {
-            position: {lat: 43.08930760969704, lng: -79.07311367392514},
-            title: "Welcome Center",
+            position: {lat: 43.64893500829895, lng: -79.37153613160311},
+            title: "St. Lawrence Market",
         },
         {
-            position: {lat: 43.079262403029816, lng: -79.07887319293789},
-            title: "Table Rock Welcome Centres",
+            position: {lat: 43.64267894416573, lng: -79.38712260727684},
+            title: "CN Tower",
         },
     ];
 
@@ -47,17 +67,9 @@ async function initMap() {
             content: pinView.element,
         });
 
-        console.log(marker.title);
-    
-        if (marker.title == "1. Niagara Falls State Park Administration") {
-            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
-                window.location.href = "niagaraFalls1.html";
-            });
-        } else {
-            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
-                window.location.href = "niagaraFalls5.html";
-            });
-        }
+        marker.addEventListener("gmp-click", () => {
+            openModal(i);
+        });
     });
 }
 

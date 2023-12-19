@@ -7,6 +7,7 @@
 
         <title>Canada Journey</title>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="modalStyle.css">
         <link rel="stylesheet" href="style.css">
         <script type="module" src="torontoMap.js"></script>
         <script src="torontoAnimation.js"></script>
@@ -14,6 +15,51 @@
 
     <body>
         <div id="map" style="position: absolute;"></div>
+
+        <section class="modal horizontal hidden">
+            <div class="flex">
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/toronto/toronto1.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section class="modal vertical hidden">
+            <div class="flex">
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/toronto/toronto2.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section class="modal horizontal hidden">
+            <div class="flex">
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/toronto/toronto3.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section class="modal vertical hidden">
+            <div class="flex">
+              <button id="torontoCloseButton4" class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/toronto/toronto4.JPEG" style="width: 100%;">
+            </div>
+        </section>
+
+        <section class="modal vertical hidden">
+            <div class="flex">
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+              <img src="Assets/Image/toronto/toronto5.JPEG" style="width: 100%;">
+            </div>
+        </section>
 
         <div class="row" id="torontoStack" style="position: absolute; height: 100vh; width: 100%; overflow: hidden; flex-wrap: nowrap; visibility: visible;">
             <div class="column" style="width: 25%;">

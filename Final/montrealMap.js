@@ -1,5 +1,25 @@
+const montrealModals = document.getElementsByClassName("modal");
+const overlay = document.querySelector(".overlay");
+const montrealCloseButtons = document.getElementsByClassName("btn-close")
+
+function openModal(i) {
+    montrealModals[i].classList.remove("hidden");
+    overlay.classList.remove("hidden");
+};
+
+function closeModal(i) {
+    montrealModals[i].classList.add("hidden");
+    overlay.classList.add("hidden");
+};
+
+Array.prototype.forEach.call(montrealCloseButtons, function(montrealCloseButton, i) {
+    montrealCloseButton.addEventListener("click", () => {
+        closeModal(i);
+    })
+});
+
 async function initMap() {
-    const posMontreal = {lat: 45.50903672849233, lng: -73.54872537327202};
+    const posMontreal = {lat: 45.527727489592024, lng: -73.57037001550934};
     
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
@@ -7,31 +27,31 @@ async function initMap() {
     const infoWindow = new google.maps.InfoWindow();
     
     let map = new Map(document.getElementById("map"), {
-        zoom: 16,
+        zoom: 14,
         center: posMontreal,
         mapId: "DEMO_MAP_ID",
     });
 
     const tourStops = [
         {
-            position: {lat: 43.08684355911157, lng: -79.0665401778558},
-            title: "Niagara Falls State Park Administration",
+            position: {lat: 45.50903672849233, lng: -73.54872537327202},
+            title: "La Grande Roue de Montréal",
         },
         {
-            position: {lat: 43.08157152748957, lng: -79.07100348838995},
-            title: "Niagara Falls Adventures",
+            position: {lat: 45.509336086009824, lng: -73.55161759630114},
+            title: "Bonsecours Market",
         },
         {
-            position: {lat: 43.09037318206784, lng: -79.06755613706792},
-            title: "Rainbow Bridge",
+            position: {lat: 45.50460686899264, lng: -73.5561664236587},
+            title: "Notre-Dame Basilica of Montreal",
         },
         {
-            position: {lat: 43.08930760969704, lng: -79.07311367392514},
-            title: "Welcome Center",
+            position: {lat: 45.55979212379101, lng: -73.5496883638221},
+            title: "Montreal Biodome",
         },
         {
-            position: {lat: 43.079262403029816, lng: -79.07887319293789},
-            title: "Table Rock Welcome Centres",
+            position: {lat: 45.50389693196807, lng: -73.58724210533396},
+            title: "Kondiaronk Belvedere",
         },
     ];
 
@@ -47,17 +67,9 @@ async function initMap() {
             content: pinView.element,
         });
 
-        console.log(marker.title);
-    
-        if (marker.title == "1. Niagara Falls State Park Administration") {
-            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
-                window.location.href = "niagaraFalls1.html";
-            });
-        } else {
-            marker.addEventListener("gmp-click", ({ domEvent, latLng }) => {
-                window.location.href = "niagaraFalls5.html";
-            });
-        }
+        marker.addEventListener("gmp-click", () => {
+            openModal(i);
+        });
     });
 }
 
