@@ -139,36 +139,36 @@ align-self: stretch, flex-start, center, flex-end, baseline;
     transform: scale(1.25);
 }
 
-.thumbnail .one {
+.thumbnail .indexLargeText {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     font-size: 64px;
     transition: all 1s ease;
 }
 
-.thumbnail:hover .one {
+.thumbnail:hover .indexLargeText {
     font-size: 96px;
 }
 
-.thumbnail .two {
+.thumbnail .indexSizedBox {
     width: 0px;
     height: 0px;
     transition: all 0.33s ease;
 }
 
-.thumbnail:hover .two {
+.thumbnail:hover .indexSizedBox {
     width: 16px;
     height: 16px;
 }
 
-.thumbnail .three {
+.thumbnail .indexSmallText {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     font-size: 0px;
     transition: all 0.33s ease;
 }
 
-.thumbnail:hover .three {
+.thumbnail:hover .indexSmallText {
     font-size: 32px;
 }
 
@@ -217,34 +217,29 @@ align-self: stretch, flex-start, center, flex-end, baseline;
 /* Media Query */
 
 @media only screen and (max-width: 1633px) {
-    .thumbnail img {
-        height: 100%;
-        /* width: auto; */
-    }
-
-    .thumbnail .one {
+    .thumbnail .indexLargeText {
         font-size: 32px;
     }
     
-    .thumbnail:hover .one {
+    .thumbnail:hover .indexLargeText {
         font-size: 48px;
     }
     
-    .thumbnail .two {
+    .thumbnail .indexSizedBox {
         width: 0px;
         height: 0px;
     }
     
-    .thumbnail:hover .two {
+    .thumbnail:hover .indexSizedBox {
         width: 8px;
         height: 8px;
     }
     
-    .thumbnail .three {
+    .thumbnail .indexSmallText {
         font-size: 0px;
     }
     
-    .thumbnail:hover .three {
+    .thumbnail:hover .indexSmallText {
         font-size: 16px;
     }
 

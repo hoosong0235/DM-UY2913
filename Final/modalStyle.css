@@ -55,4 +55,16 @@ button {
 
 .hidden {
     display: none;
-  }
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1633px) {
+    .vertical {
+        width: 75%;
+    }
+
+    .horizontal {
+        width: 75%;
+    }
+}

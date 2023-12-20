@@ -2,6 +2,10 @@
 
 ## Demo
 
+<a href="https://youtu.be/1Gdks29qcKk">
+    <img src="ReadmeAssets/Thumbnail.png">
+</a>
+
 ## Screenshots
 
 ### 1) Desktop
@@ -50,19 +54,41 @@ The website that includes photos that are taken in Canada this thanksgiving holi
 
 ### 1) Hover Effect
 
+<details>
+<summary>⌨️ Code Snippet</summary>
+</details>
+
 ### 2) Animation
+
+<details>
+<summary>⌨️ Code Snippet</summary>
+</details>
 
 ### 3) Google Map and Pin
 
+<details>
+<summary>⌨️ Code Snippet</summary>
+</details>
+
 ### 4) Modal
+
+<details>
+<summary>⌨️ Code Snippet</summary>
+</details>
+
+### 5) Media Query
+
+<details>
+<summary>⌨️ Code Snippet</summary>
+</details>
 
 ## 6. Improvement
 
 ### 1) Auto Pin Generation
 
-    for file in folder:
-        add html element of file in document
-        add pin on map based on file.location and file.image
+for file in folder
+add html element of file in document
+add pin on map based on file.location and file.image
 
 ### 2) Cluster Image
 
