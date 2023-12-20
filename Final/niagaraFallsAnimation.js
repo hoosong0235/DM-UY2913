@@ -1,4 +1,4 @@
-const niagaraFallsSizedBoxSize = 360;
+const niagaraFallsSizedBoxSize = 720;
 
 function niagaraFallsAnimateIn() {
     document.getElementById("niagaraFallsStack").style.visibility = "visible";

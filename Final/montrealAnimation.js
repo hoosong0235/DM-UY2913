@@ -1,4 +1,4 @@
-const montrealSizedBoxSize = 360;
+const montrealSizedBoxSize = 720;
 
 function montrealAnimateIn() {
     document.getElementById("montrealStack").style.visibility = "visible";

@@ -1,4 +1,4 @@
-const quebecCitySizedBoxSize = 360;
+const quebecCitySizedBoxSize = 720;
 
 function quebecCityAnimateIn() {
     document.getElementById("quebecCityStack").style.visibility = "visible";

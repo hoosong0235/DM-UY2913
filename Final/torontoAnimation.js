@@ -1,4 +1,4 @@
-const torontoSizedBoxSize = 360;
+const torontoSizedBoxSize = 720;
 
 function torontoAnimateIn() {
     document.getElementById("torontoStack").style.visibility = "visible";
